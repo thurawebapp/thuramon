@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+		<meta charset="UTF-8" />		
+        <title>nativeDroid - Theme for jQuery Mobile</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+		<!-- jQueryMobileCSS - original without styling -->
+        <link rel="stylesheet" href="css/jquerymobile.css" />
+
+		<!-- nativeDroid core CSS -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+
+		<!-- nativeDroid: Light/Dark -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css"  id='jQMnDTheme' />
+		
+		<!-- nativeDroid: Color Schemes -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.blue.css" id='jQMnDColor' />
+
+		<!-- jQuery / jQueryMobile Scripts -->
+		<script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.mobile-1.3.1.min.js"></script>
+		<script>
+		$(function(){
+				$("#mid_content img").fadeIn(500,function(){
+							$("#mid_content a").fadeIn(500);
+				});
+		});
+		</script>
+
+    </head>
+    <body>
+        
+    <div data-role="page" data-theme='b' style="background: #fa9401 url('images/load_screen.jpg') no-repeat center center;">
+
+        <div data-role="content" >
+				<div id=mid_content style="margin: 0 auto;width:239px;text-align:center;" >
+					
+						
+						<br /><br />
+						<div class='splashScreenExample'>
+						
+						<div class='splashScreenDroid' style="top:100%;"><img src="images/welcome.png" /><h3>
+					<a href="menu.html"  style="font-size:15px;display:none;box-shadow: inset 0px 0px 0px 1px #8e664c ;" class="" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true">
+								<i class='icon-reorder'></i> Browse Our Action
+						</a></h3></div>
+						
+						<div><br></br><br></br>
+					<h1 style="font-size:25px;">MONMYATHADAR</h1>
+					<h2 style="color:#000;font-size:18px;">ACTIVIES & EVENTS</h2>
+					<h3 style="color:#000;font-size:12px;">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</h3>
+					
+					</div>
+				</div>
+						
+				</div>
+        </div>
+    </div>
+    
+    </body>
+</html>
