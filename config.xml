@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget id="com.example.app" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.hello-world"
+        id        = "hello-world.phonegap.com"
+        id        = "www.thura.com"
+        id        = "com.thura.www"
+        version   = "1.0.1">
 
 <<<<<<< HEAD
     <name>MonMyatThadar</name>
@@ -10,7 +16,7 @@
          Monmyat thathar Youth Donation Group
     </description>
 
-    <author href="http://greenwebcreations.com" email="mozet89@gmail.com">
+    <author href="http://futureictsolution.com" email="poohspear@gmail.com">
         Green Web Creation
 =======
     <name>Monmyathadar</name>
@@ -19,7 +25,7 @@
          Monmyathadar youth Donation group
     </description>
 
-    <author href="http://greenwebcreations.com" email="mozet89@gmail.com">
+    <author href="http://futureictsolution.com" email="poohspear@gmail.com">
         Green Web Crations
 >>>>>>> 10b9afd85c903b93500b0a1645a2699eef3da1c5
     </author>

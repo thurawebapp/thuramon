@@ -1,0 +1,441 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+		<meta charset="UTF-8" />		
+        <title>nativeDroid - Theme for jQuery Mobile</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+		<!-- jQueryMobileCSS - original without styling -->
+        <link rel="stylesheet" href="css/jquerymobile.css" />
+
+		<!-- nativeDroid core CSS -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+
+		<!-- nativeDroid: Light/Dark -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css"  id='jQMnDTheme' />
+		
+		<!-- nativeDroid: Color Schemes -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.blue.css" id='jQMnDColor' />
+
+		<!-- jQuery / jQueryMobile Scripts -->
+		<script src="js/jquery-1.9.1.min.js"></script>
+		
+        <script src="js/jquery.mobile-1.3.1.min.js"></script>
+
+
+    </head>
+    <body>
+        
+    <div data-role="page" data-theme='b'>
+
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+		<a href="menu.html" data-ajax="false"><i class='icon-reorder'></i></a>
+            &nbsp; &nbsp; &nbsp; 
+
+            <img src="images/banner_logo.jpg" />
+            <img style="float:right;" src="images/padauk.png" />
+			
+		</div>
+        
+        <div data-role="content">   
+	        <div class='inset'>
+				<h1>We Are <br>Members</h1>
+
+	        </div>
+			<style>
+				.navbar
+					{
+
+						width:100%;
+						z-index:1;
+						position:relative;
+						background:#252525;
+					}
+				.navber ul li	
+					{
+						border:1px solid #111;
+					}
+				.ui-btn-active
+					{
+						background:#353535;
+					}	
+			</style>
+			<div data-role="navbar" class="navbar">
+				<ul>
+					<li style="border-right:1px solid #111;"><a href="member.html"><i class='icon-male'></i>&nbsp;&nbsp; MEMBERS</a></li>
+					<li><a href="other-donators.html" class="ui-btn-active"><i class='icon-male'></i>&nbsp;&nbsp; OTHER DONATORS</a></li>
+				</ul>
+			</div><!-- /navbar -->
+			<style type="text/css">
+.datagrid table 
+			{ border-collapse: collapse; text-align: left; width: 100%; }
+			.datagrid {font: normal 12px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px solid #006699; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+			.datagrid table td, .datagrid table th { padding: 3px 10px; }
+			.datagrid table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');background-color:#006699; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 1px solid #0070A8; }
+			.datagrid table thead th:first-child { border: none; }
+			.datagrid table tbody td { color: #00496B; border-left: 1px solid #E1EEF4;font-size: 12px;font-weight: normal; }
+			.datagrid table tbody .alt td { background: #E1EEF4; color: #00496B; }
+			.datagrid table tbody td:first-child { border-left: none; }
+			.datagrid table tbody tr:last-child td { border-bottom: none; }
+			.datagrid table tfoot td div { border-top: 1px solid #006699;background: #E1EEF4;}
+			.datagrid table tfoot td { padding: 0; font-size: 12px } 
+			.datagrid table tfoot td div{ padding: 2px; }
+			.datagrid table tfoot td ul { margin: 0; padding:0; list-style: none; text-align: right; }
+			.datagrid table tfoot  li { display: inline; }
+			.datagrid table tfoot li a { text-decoration: none; display: inline-block;  padding: 2px 8px; margin: 1px;color: #FFFFFF;border: 1px solid #006699;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');background-color:#006699; }
+			.datagrid table tfoot ul.active, .datagrid table tfoot ul a:hover { text-decoration: none;border-color: #006699; color: #FFFFFF; background: none; background-color:#00557F;}div.dhtmlx_window_active, div.dhx_modal_cover_dv { position: fixed !important; }</style>
+<div class="datagrid">
+	<table>
+		<thead>
+			<tr>
+				<th>
+					No.
+				</th>
+				<th>
+					Name
+				</th>
+				<th>
+					Town
+				</th>
+				<th>
+					Amount-ks
+				</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<td colspan="4">
+					<div id="paging">
+						<ul>
+							<li>
+								<a href="other-donators.html"><span>Previous</span></a>
+							</li>
+							<li>
+								<a href="other-donators.html"><span>1</span></a>
+							</li>
+							<li>
+								<a class="active" href="other-donators2.html"><span>2</span></a>
+							</li>
+							<li>
+								<a href="other-donators3.html"><span>3</span></a>
+							</li>
+							<li>
+								<a href="other-donators4.html"><span>4</span></a>
+							</li>
+							<li>
+								<a href="other-donators3.html"><span>Next</span></a>
+							</li>
+						</ul>
+					</div>
+				</td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr>
+				<td>
+					21
+				</td>
+				<td>
+					Ma Khin Myo Aung
+				</td>
+				<td>
+					Fame
+				</td>
+				<td>
+					1000
+				</td>
+			</tr>
+			<tr class="alt">
+				<td>
+					22
+				</td>
+				<td>
+					U Than U + Daw Mya Cho Cho
+				</td>
+				<td>
+					Fame
+				</td>
+				<td>
+					1000
+				</td>
+			</tr>
+			<tr>
+				<td>
+					23
+				</td>
+				<td>
+					Ko Aung Thu Latt
+				</td>
+				<td>
+					Dagon (East)
+				</td>
+				<td>
+					2000
+				</td>
+			</tr>
+			<tr class="alt">
+				<td>
+					24
+				</td>
+				<td>
+					Ma Su Su Oo
+				</td>
+				<td>
+					Fame
+				</td>
+				<td>
+					1000
+				</td>
+			</tr>
+			<tr>
+				<td>
+					25
+				</td>
+				<td>
+					Ma Swe Zin Oo
+				</td>
+				<td>
+					Fame
+				</td>
+				<td>
+					1000
+				</td>
+			</tr>
+			<tr class="alt">
+				<td>
+					26
+				</td>
+				<td>
+					Ma Aye Aye Aung
+				</td>
+				<td>
+					Fame
+				</td>
+				<td>
+					1000
+				</td>
+			</tr>
+			<tr>
+				<td>
+					27
+				</td>
+				<td>
+					Ma Ni Ni Win + Ma Kyu Kyu
+				</td>
+				<td>
+					Fame
+				</td>
+				<td>
+					1000
+				</td>
+			</tr>
+			<tr class="alt">
+				<td>
+					28
+				</td>
+				<td>
+					Ma Aye Sandar + Ma Pan
+				</td>
+				<td>
+					Fame
+				</td>
+				<td>
+					1000
+				</td>
+			</tr>
+			<tr>
+				<td>
+					29
+				</td>
+				<td>
+					Ma Phyu
+				</td>
+				<td>
+					Fame
+				</td>
+				<td>
+					500
+				</td>
+			</tr>
+			<tr class="alt">
+				<td>
+					30
+				</td>
+				<td>
+					Ma Wai Wai Nan Myint
+				</td>
+				<td>
+					Fame
+				</td>
+				<td>
+					1500
+				</td>
+			</tr>
+			<tr>
+				<td>
+					31
+				</td>
+				<td>
+					Ma Thet Thet Cho
+				</td>
+				<td>
+					Fame
+				</td>
+				<td>
+					500
+				</td>
+			</tr>
+			<tr class="alt">
+				<td>
+					32
+				</td>
+				<td>
+					Ma War War Nu
+				</td>
+				<td>
+					Fame
+				</td>
+				<td>
+					5000
+				</td>
+			</tr>
+			<tr>
+				<td>
+					33
+				</td>
+				<td>
+					U Htay Win + Daw Soe Soe
+				</td>
+				<td>
+					Aung San
+				</td>
+				<td>
+					1000
+				</td>
+			</tr>
+			<tr class="alt">
+				<td>
+					34
+				</td>
+				<td>
+					Aye Min Soe
+				</td>
+				<td>
+					Fame
+				</td>
+				<td>
+					500
+				</td>
+			</tr>
+			<tr>
+				<td>
+					35
+				</td>
+				<td>
+					Daw Lai Lai
+				</td>
+				<td>
+					Pazuntong
+				</td>
+				<td>
+					30000
+				</td>
+			</tr>
+			<tr class="alt">
+				<td>
+					36
+				</td>
+				<td>
+					U Than Naing
+				</td>
+				<td>
+					Pazuntong
+				</td>
+				<td>
+					10000
+				</td>
+			</tr>
+			<tr>
+				<td>
+					37
+				</td>
+				<td>
+					Ma Cho Thet Lwin
+				</td>
+				<td>
+					TinKhankyune
+				</td>
+				<td>
+					10000
+				</td>
+			</tr>
+			<tr class="alt">
+				<td>
+					38
+				</td>
+				<td>
+					Ma Aye Aye Maw
+				</td>
+				<td>
+					Kamaryut
+				</td>
+				<td>
+					10000
+				</td>
+			</tr>
+			<tr>
+				<td>
+					39
+				</td>
+				<td>
+					Ko Min Htike
+				</td>
+				<td>
+					Mandalay
+				</td>
+				<td>
+					10000
+				</td>
+			</tr>
+			<tr class="alt">
+				<td>
+					40
+				</td>
+				<td>
+					Ma Khin May Than Soe
+				</td>
+				<td>
+					Inn Sein
+				</td>
+				<td>
+					10000
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+
+
+		</div>
+		
+		<div data-position="fixed" data-tap-toggle="false" data-role="footer" data-tap-toggle="false" data-theme='b'>
+			<div data-role="navbar">
+				<ul>
+					<li ><a href="home.html" data-ajax="false" data-icon="home"> Home</a></li>
+					<li><a href="our_gallery.html" data-ajax="false" data-icon="picture"> Our Gallery</a></li>
+					<li><a href="activities.html"  data-ajax="false"data-icon="magic"> Activities</a></li>
+					<li><a href="contact_us.html" data-ajax="false" data-icon="phone"> Contact Us</a></li>										
+				</ul>
+			</div>
+		</div>
+
+    </div>
+    
+    </body>
+</html>
